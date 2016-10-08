@@ -111,7 +111,7 @@ section {
     padding: 0 16px;
     margin-left: 100px;
     margin-right: 100px;
-    max-width: 750px;
+    max-width: 960px;
   }
 }
 section.header {
@@ -132,6 +132,12 @@ section.main {
   -ms-order: 2;
   order: 2;
 }
+section.footer {
+  -webkit-order: 99;
+  -moz-order: 99;
+  -ms-order: 99;
+  order: 99;
+}
 @media (min-width: 600px) {
   section.header {
     -webkit-order: 0;
@@ -140,16 +146,22 @@ section.main {
     order: 0;
   }
   section.icons {
-    -webkit-order: 2;
-    -moz-order: 2;
-    -ms-order: 2;
-    order: 2;
-  }
-  section.main {
     -webkit-order: 1;
     -moz-order: 1;
     -ms-order: 1;
-    order: 1;
+    order: 1; /* origin 2 */
+  }
+  section.main {
+    -webkit-order: 2;
+    -moz-order: 2;
+    -ms-order: 2;
+    order: 2; /* origin 1 */
+  }
+  section.footer {
+    -webkit-order: 99;
+    -moz-order: 99;
+    -ms-order: 99;
+    order: 99;
   }
 }
 section.header {
@@ -500,14 +512,18 @@ section {
 }
 section.header {
   padding-top: 32px;
-  padding-bottom: 16px;
+  padding-bottom: 0px;
 }
 section.icons {
   padding-top: 0;
-  padding-bottom: 32px;
+  padding-bottom: 15px;
 }
 section.main {
   padding-top: 32px;
+  padding-bottom: 32px;
+}
+section.footer {
+  padding-top: 16px;
   padding-bottom: 32px;
 }
 @media (min-width: 600px) {
@@ -515,15 +531,12 @@ section.main {
     margin: 0 30px;
   }
   section.header {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
   section.icons {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
   section.main {
-    padding-top: 0;
     padding-bottom: 0;
   }
   section.main .container .content .post-item {
@@ -536,6 +549,10 @@ section.main {
   section.main.post {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  section.footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 a {
