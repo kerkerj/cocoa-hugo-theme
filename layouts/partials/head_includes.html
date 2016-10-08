@@ -10,10 +10,7 @@
 
 <!-- CSS -->
 
-{{ if .Site.Params.HighlightJS }}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
-{{ end }}
-
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 {{ if eq true .Site.Params.CacheBuster }}
 
@@ -35,6 +32,15 @@
     <link rel="stylesheet" href="{{.}}?{{ .Now.Unix }}">
 {{end}}
 
+{{ end }}
+
+<!-- Syntax Highlight -->
+{{ if .Site.Params.HighlightJS }}
+    {{ if .Site.Params.HighlightStyle }}
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/{{ .Site.Params.HighlightStyle }}.min.css">
+    {{ else }}
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
+    {{ end }}
 {{ end }}
 
 <!-- Icon -->

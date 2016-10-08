@@ -26,6 +26,7 @@ FaviconFile = "img/leaf.ico"
 GATracker = "XYZ"
 GitHub = "//github.com/you"
 HighlightJS = true
+HighlightStyle = "railscast" # if not provided, it will load default style
 Initials = "ad" # Displayed on single post page; DEPRECATED in v0.3.0.
 Lang = "en"
 LinkedIn = "//linkedin.com/in/you"

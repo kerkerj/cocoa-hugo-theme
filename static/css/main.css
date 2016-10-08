@@ -547,7 +547,7 @@ section.footer {
     display: block;
   }
   section.main.post {
-    padding-top: 60px;
+    padding-top: 32px;
     padding-bottom: 60px;
   }
   section.footer {
@@ -622,7 +622,7 @@ section.main .content .markdown code,
 section.main .content .markdown pre {
   font-family: 'Ubuntu Mono', 'Menlo', monospace;
   font-size: 0.98rem;
-  background-color: #f7f7f7;
+  /*background-color: #f7f7f7;*/
 }
 section.main .content .markdown code {
   /* enclosed by single backtick (`) */
@@ -643,7 +643,7 @@ section.main .content .markdown pre {
 }
 section.main .content .markdown pre code {
   /* enclosed by 4 backticks (````) */
-  padding: 0;
+  padding: 10px;
   font-size: 0.9rem;
 }
 section.main .content .markdown a code {
@@ -732,5 +732,5 @@ section.main .content .markdown th {
 }
 section.main .content .markdown tbody tr:nth-child(odd) td,
 section.main .content .markdown tbody tr:nth-child(odd) th {
-  background-color: #f7f7f7;
+  /*background-color: #f7f7f7;*/
 }
